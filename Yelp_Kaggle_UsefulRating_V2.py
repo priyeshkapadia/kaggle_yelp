@@ -24,9 +24,6 @@ user_test_df     = pd.read_json('yelp_test_set/yelp_test_set_user.json'         
 business_test_df = pd.read_json('yelp_test_set/yelp_test_set_business.json'        , lines=True)
 checkin_test_df  = pd.read_json('yelp_test_set/yelp_test_set_checkin.json'         , lines=True)
 
-review_df      = review_df[:100]
-review_test_df = review_test_df[:100]
-
 print('Kaggle Training Set:')
 print('\tNo of reviews:'   , len(review_df))
 print('\tNo of users:'     , len(user_df))
